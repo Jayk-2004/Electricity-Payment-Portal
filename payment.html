@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="pay.css">
+</head>
+
+<body>
+
+
+
+
+
+  
+<center>
+
+
+  <div class="container">
+    <form name="cardForm" action="">
+      <!-- creating a form using "form" tag-->
+      <hr />
+      <h1 class="main_heading">Payment Form</h1>
+      <p><span>*</span> <b>marked places are must to be filled</b></p>
+      <hr />
+      <h2>PERSONAL INFORMATION</h2>
+      <p> NAME<span>*</span> :<input type="text" id="round" name="name" required
+                        oninvalid="this.setCustomValidity('Enter your awesome full name here please')"
+                        oninput="this.setCustomValidity('')"/></p>
+      <!-- "required" this tag means that we have to fill that place mandatory-->
+      <fieldset>
+        <legend> CHOOSE GENDER<span>*</span></legend>
+        <p>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="others" />
+          <label for="others">Others</label>
+        </p>
+      </fieldset>
+      <p> ADDRESS<span>*</span> :
+        <textarea name="Address" id="Address" cols="100" rows="8" required></textarea>
+        <!-- adding a blank text area for writing address-->
+      </p>
+      <p> Email<span>*</span> : <input type="email" name="email" id="email" required
+                         oninvalid="this.setCustomValidity('Enter correct email address please')"
+                         oninput="this.setCustomValidity('')"/></p>
+      <p> PINCODE<span>*</span> <input type="number" name="pincode" id="pincode" pattern="[0-9]{4,}"/></p>
+      <hr />
+      <h2><b>PAYMENT INFORMATION</b></h2>
+      <p>
+         Card Type<span>*</span>:-
+        <select name="Card_type" id="Card_type" required>
+          <option value="">--Select A Card Type--</option>
+          <option value="Visa">Visa</option>
+          <option value="Master Card">Master Card</option>
+          <option value="RuPay">Rupay</option>
+          <option value="Credit/Debit">Credit or Debit</option>
+        </select>
+      </p>
+      <p>
+        Card Number<span>*</span>:-
+        <input type="number" name="card_number" id="card_number" required pattern="[0-9]{13,16}"
+               oninvalid="this.setCustomValidity('Add correct card data here with correct length')"
+               oninput="this.setCustomValidity('')"/>
+      </p>
+      <p>
+        Card Expiry Date<span>*</span>:-
+        <input type="date" name="Expiry_date" id="Expiry_date" required />
+      </p>
+      <p>
+        CVV<span>*</span>:-
+        <input type="password" name="CVV" id="CVV" maxlength="3" required pattern="[0-9]{3}"
+               oninvalid="this.setCustomValidity('CVV needs to be 3 numbers long, no letters')"
+               oninput="this.setCustomValidity('')"/>
+      </p>
+      <input class="btn" type="submit" value="SUBMIT DETAILS & PAY NOW" />
+    </form>
+  </div>
+</center>
+
+
+
+
+
+</body>
+
+</html>

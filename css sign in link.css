@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container
+{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+} 
+.form-box{
+    background-image:url(17545.jpg);
+    width: 380px;
+    height: 480px;
+    border-radius: 20px;
+    margin: 6% auto;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 3px #9AFBFA;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #9AFBFA, #D071F9);
+    border-radius: 35px;
+    transition: 0.5s;
+}
+.social-media
+{
+
+    margin: 30px auto;
+    text-align: center;
+} 
+.social-media img
+{
+    width: 30px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px 0 #f7f7f7;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.login-form
+{
+    border: 0px solid;
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 00.5s;
+}
+.form-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    outline: none;
+    background: transparent;
+}
+.submit
+{
+    width: 85%;
+    padding: 10px 35px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #9AFBFA, #D071F9);
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+}
+.checkbox
+{
+    margin: 30px 5px;
+}
+.span
+{
+    color: #777;
+    font-size: 12px;
+    bottom: 64px;
+    position: absolute;
+}
+#login
+{
+    left: 50px;
+}
+#register
+{
+    left: 450px;
+}
+.login-form  input {
+color:#181719
+}
+.back-video{
+    position:absolute;
+    padding:0;
+    right: 0;
+    margin-bottom: 0;
+    bottom:auto;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+    z-index:-100;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
